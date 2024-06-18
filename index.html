@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aim hero</title>
+    <script src="script/jquery_v3.7.1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div id="main">
+            <h2>에임 트레이닝</h2>
+            <form id="mainForm">
+                <div id="difficultyButton">
+                    <input type="radio" name="difficulty" value="쉬움" id="easy">
+                    <label for="easy">쉬움</label>
+
+                    <input type="radio" name="difficulty" value="보통" id="nomal" checked>
+                    <label for="nomal">보통</label>
+
+                    <input type="radio" name="difficulty" value="어려움" id="hard">
+                    <label for="hard">어려움</label>
+                </div>
+                <button type="submit" id="startBtn">시작하기</button>
+            </form>
+        </div>
+
+        <div id="game">
+            <p><span id="time">30</span>초</p>
+            <h2></h2>
+            <p id="score"><span>0</span>점</p>
+            <form id="gameForm">
+                <div class="clickPoint"></div>
+                <h1><span>5</span>초 후 게임이 시작됩니다.</h1>
+                <button type="submit" id="stopBtn">포기하기</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
